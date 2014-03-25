@@ -1,5 +1,15 @@
 <?php
-
+/**** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** 
+ * Developer Notes:
+ *     User report on 2014-03-25 that this module is broken
+ * 
+ * 
+ * 
+ * Version history:
+ *     2009-10-03  2.2 version by Nixi (Jonathan)
+ *     2011-xx-xx  migrated to version 2.11.x by ukstevef
+ * 
+ **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** ****/
 class Lokaldelen_SE extends superfecta_base {
 
     public $description = "http://www.lokaldelen.se - This listings include data from the Swedish lokaldelen.se directory.";

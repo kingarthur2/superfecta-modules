@@ -14,8 +14,8 @@ class LocalTel_CH extends superfecta_base {
         } else {
             $this->DebugPrint("Searching Local.ch-Swiss ... ");
 
-            $url = "http://tel.search.ch/index.en.html?was=$thenumber";
-            $pattern = "/class=\"(?:fn|fn org)\">(.*)<\/a>/";
+            $url = "http://tel.search.ch/api/?was=$thenumber";
+            $pattern = "/   <title type=\"text\">(.*)<\/title>/";
 
             if ($this->SearchURL($url, $pattern, $match)) {
                 $caller_id = $this->ExtractMatch($match);
